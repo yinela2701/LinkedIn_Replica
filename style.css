@@ -62,16 +62,182 @@ body {
 .Icons {
     display: flex;
     align-items: center;
-    margin-left: 15%; 
+    margin-left: 10%; 
     justify-items: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 .btn-navegacion:hover {
     color: black; 
 }
 
+/* Aquí empieza el css para el grid del cuerpo del documento */
 
+.Grid
+{
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    grid-template-rows:repeat(8,22%) ;
+    column-gap: 1em;
+    row-gap: 0.5em;
+    justify-content: center;
+    margin: 2% 10% 0% 10%;
+}
+
+.Grid div
+{
+    border:10px;
+    border-color: black;
+    border-radius: 10px;
+    background-color: white;
+   
+}
+
+/* CSS para el div de perfil */
+
+.Crear-publicacion{
+    padding: 15px;
+}
+
+.Perfil{
+    grid-row: 1/4 ;
+}
+
+.Mas{
+    grid-row: 4/6 ;
+}
+
+.Publicaciones{
+    grid-row: 2/8 ;
+}
+
+.Añadir
+{
+    grid-row: 1/4;
+    padding: 15px;
+}
+
+.Publicidad{
+    grid-row: 4/6;
+    overflow: hidden; 
+    padding: 0px;
+}
+
+.Footer{
+    grid-row: 6/8;
+    grid-column: 3;
+}
+
+
+.btn-perfil img{
+    border-radius: 50px;
+    border: 3px solid black;
+}
+
+.btn-perfil
+{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap:20px;
+
+}
+/* CSS para el div de crear publicación */
+
+
+.foto-crear {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.foto-crear img{
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    
+}
+.foto-crear input
+{
+    border-radius: 50px;
+    width: 100%;
+    height: 26px;
+    padding: 10px;
+    border: gray solid;
+    cursor: pointer;
+}
+
+.foto-crear input:hover
+{
+    background-color: rgb(226, 226, 226);
+}
+
+.tipo-publicacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+.btn-tipo-publicacion {
+    background: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    gap: 5px; 
+    padding: 5px 3px 5px 3px;
+    
+}
+
+.multimedia i {
+    color: blue; 
+}
+
+.evento i {
+    color: green; 
+}
+
+.articulo i {
+    color: red; 
+}
+
+.btn-tipo-publicacion:hover {
+    background-color: rgb(226, 226, 226);
+}
+
+/* CSS para publicidad */
+
+
+.Publicidad img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+
+/* CSS para Añadir a tu feed */
+.Titulo-añadir{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.Titulo-añadir h3{
+    margin: 0px;
+}
+
+.Titulo-añadir i{
+    color: gray;
+    cursor: pointer;
+}
 
 
 
