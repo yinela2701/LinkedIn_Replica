@@ -77,7 +77,7 @@ body {
 {
     display: grid;
     grid-template-columns: 20% 50% 30%;
-    grid-template-rows:repeat(8,22%) ;
+    grid-template-rows:repeat(8,17%) ;
     column-gap: 1em;
     row-gap: 0.5em;
     justify-content: center;
@@ -229,6 +229,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
 }
 .Titulo-añadir h3{
     margin: 0px;
@@ -239,6 +240,61 @@ body {
     cursor: pointer;
 }
 
+.perfil-seguir img {
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.perfil-seguir {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.perfil-seguir p{
+    cursor: pointer;
+    margin: 8px;
+} 
+
+.perfil-seguir span{
+    font-size: 12px;
+    color: gray;
+} 
+
+.btn-seguir{
+    background: none;
+    border-radius: 25px;
+    width: 100px;
+    height: 30px;
+    margin-left: 65px;
+    cursor: pointer;
+    border-color: gray;
+}
+
+.btn-seguir:hover{
+    background-color: gainsboro;
+    border-color:black;
+}
+
+.ver-mas p {
+    margin: 0; 
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.ver-mas{
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+.ver-mas:hover{
+    background-color: gainsboro;
+}
 
 
 
