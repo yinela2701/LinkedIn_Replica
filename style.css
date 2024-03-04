@@ -104,7 +104,8 @@ body {
 }
 
 .Mas{
-    grid-row: 4/6 ;
+    grid-row: 4/5 ;
+    padding: 15px;
 }
 
 .Publicaciones{
@@ -296,5 +297,35 @@ body {
     background-color: gainsboro;
 }
 
+/* CSS para el botón más */
+.Mas-eventos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.agregar-evento{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.Mas-eventos button:hover{
+    background-color: gainsboro;
+}
+
+.a-mas{
+    text-decoration: none; 
+    color: #3498db; 
+    font-size: 14px;
+}
 
