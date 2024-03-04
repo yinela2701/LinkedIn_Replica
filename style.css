@@ -2,6 +2,7 @@ body {
     background-color: #f4f2ee;
     margin: 0;
     padding: 0;
+    font-family: "Open Sans", sans-serif;
 }
 
 .btn-navegacion img {
@@ -27,6 +28,12 @@ body {
     align-items: center;
     padding: 5px;
     background-color: white;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+   
 }
 
 .Busqueda {
@@ -58,14 +65,20 @@ body {
     transform: translateY(-50%);
     cursor: pointer;
 }
+.Icons a{
+    text-align: center;
+    font-size: 12px;
+    color:rgb(141, 48, 48);
+}
 
 .Icons {
     display: flex;
     align-items: center;
-    margin-left: 10%; 
+    margin-left: 13%; 
     justify-items: center;
     gap: 25px;
 }
+
 
 .btn-navegacion:hover {
     color: black; 
@@ -81,7 +94,7 @@ body {
     column-gap: 1em;
     row-gap: 0.5em;
     justify-content: center;
-    margin: 2% 10% 0% 10%;
+    margin: 5.5% 10% 0% 10%;
 }
 
 .Grid div
@@ -130,9 +143,19 @@ body {
 }
 
 
+.descripcion-foto
+{ 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
 .btn-perfil img{
     border-radius: 50px;
     border: 3px solid black;
+    width: 60px;
+    height: 60px;
 }
 
 .btn-perfil
@@ -143,9 +166,112 @@ body {
     padding: 0; 
     display: flex;
     flex-direction: column;
-    align-items: end;
-    gap:20px;
+    align-items: center;
+    gap:5px;
 
+}
+
+.btn-perfil span{
+    color:gray;
+    font-size:13px;
+    margin-top: -15px;
+}
+
+.btn-perfil:hover{
+    text-decoration: underline;
+    text-decoration-color: indigo;
+}
+
+.contactos{
+    border: none;
+    border-top: 1px solid gray;
+    background-color: white;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.contactos:hover{
+    background-color:rgb(226, 226, 226) ;
+
+}
+
+.contactos p{
+    text-align: justify;
+    color:black;
+    font-size: 13px;
+}
+
+.contactos span{
+    color:gray;
+    font-size: 12px;
+}
+
+.premium{
+    border: none;
+    border-top: 1px solid gray;
+    background-color: white;
+    cursor: pointer;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.premium:hover{
+    background-color:rgb(226, 226, 226) ;
+
+}
+
+.premium:hover span{
+    text-decoration-color: #3498db;
+    color: #3498db;
+}
+
+.premium p{
+    text-align: justify;
+    color:gray;
+    font-size: 12px;
+}
+
+.premium span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    color: black;
+    font-size: 13px;
+}
+.premium span i{
+    color:orange;
+}
+
+.marcapaginas{
+    border: none;
+    border-top: 1px solid gray;
+    background-color: white;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+}
+.marcapaginas i{
+    color:gray;
+}
+
+.marcapaginas:hover{
+    background-color:rgb(226, 226, 226) ;
+
+}
+
+.marcapaginas p {
+    font-size: 13px;
 }
 /* CSS para el div de crear publicación */
 
@@ -232,7 +358,7 @@ body {
     align-items: center;
     margin-bottom: 10px;
 }
-.Titulo-añadir h3{
+.Titulo-añadir h4{
     margin: 0px;
 }
 
@@ -243,8 +369,8 @@ body {
 
 .perfil-seguir img {
     border-radius: 50px;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
 }
 
 .perfil-seguir {
@@ -257,10 +383,11 @@ body {
 .perfil-seguir p{
     cursor: pointer;
     margin: 8px;
+    font-size: 13px;
 } 
 
 .perfil-seguir span{
-    font-size: 12px;
+    font-size: 11px;
     color: gray;
 } 
 
@@ -286,6 +413,8 @@ body {
     gap: 5px;
     cursor: pointer;
     padding-left: 10px;
+    font-size: 14px;
+    color: gray;
 }
 
 .ver-mas{
@@ -326,6 +455,9 @@ body {
 .a-mas{
     text-decoration: none; 
     color: #3498db; 
-    font-size: 14px;
+    font-size: 12px;
 }
 
+.a-mas:hover{
+    text-decoration: underline;
+}
