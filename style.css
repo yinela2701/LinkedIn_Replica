@@ -33,6 +33,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+
+    box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.15);
    
 }
 
@@ -50,7 +52,9 @@ body {
 .Barra-busqueda input {
     padding-left: 40px; 
     border-radius: 5px; 
-    height: 25px;
+    height: 30px;
+    border:none;
+    background-color:rgb(242, 242, 252);
 
 }
 
@@ -79,6 +83,11 @@ body {
     gap: 25px;
 }
 
+.Icons > :first-child {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
 
 .btn-navegacion:hover {
     color: black; 
@@ -90,54 +99,59 @@ body {
 {
     display: grid;
     grid-template-columns: 20% 50% 30%;
-    grid-template-rows:repeat(8,17%) ;
+    grid-template-rows:repeat(32,2.1em) ;
     column-gap: 1em;
     row-gap: 0.5em;
     justify-content: center;
     margin: 5.5% 10% 0% 10%;
 }
 
-.Grid div
+.Grid > div
 {
     border:10px;
     border-color: black;
     border-radius: 10px;
     background-color: white;
     overflow: hidden;
+    box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.15);
+    
    
 }
 
 .Crear-publicacion{
     padding: 15px;
+    grid-row: 1/ 4;
+    
+
 }
 
 .Perfil{
-    grid-row: 1/4 ;
+    grid-row: 1/10 ;
    
 }
 
 .Mas{
-    grid-row: 4/5 ;
+    grid-row: 10/14 ;
      
 }
 
 .Publicaciones{
-    grid-row: 2/8 ;
+    grid-row: 4/27 ;
 }
 
 .Añadir
 {
-    grid-row: 1/4;
+    grid-row: 1/11;
     padding: 15px;
 }
 
 .Publicidad{
-    grid-row: 4/6;
+    grid-row: 11/18;
     padding: 0px;
 }
 
 .Footer{
-    grid-row: 6/8;
+    grid-row: 18/24;
     grid-column: 3;
 }
 
@@ -152,7 +166,7 @@ body {
 { 
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     margin-top: -45px;
 }
 
@@ -265,6 +279,7 @@ body {
     align-items: center;
     gap: 10px;
     padding-left: 10px;
+    padding-top: 6px;
 }
 .marcapaginas i{
     color:gray;
@@ -312,6 +327,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 3px;
    
 }
 
@@ -404,6 +420,8 @@ body {
     margin-left: 65px;
     cursor: pointer;
     border-color: gray;
+    margin-top: 2px;
+    font-size: 15px;
 }
 
 .btn-seguir:hover{
@@ -418,13 +436,13 @@ body {
     gap: 5px;
     cursor: pointer;
     padding-left: 10px;
-    font-size: 14px;
+    font-size: 13px;
     color: gray;
 }
 
 .ver-mas{
     margin-right: 50px;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 .ver-mas:hover{
@@ -435,7 +453,7 @@ body {
 .Mas-eventos{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 11px;
     padding: 15px;
 }
 
@@ -488,7 +506,7 @@ body {
     border-top: 1px solid gray;
     margin: 0;
     color: gray;
-    padding: 10px;
+    padding: 14px;
 }
 
 .Mas-ver-mas:hover{
@@ -500,9 +518,10 @@ body {
 .interaccion-publicaciones{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    border-bottom: 10px solid gray;
-    
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    margin: 0px 15px 0px 15px;
+    padding-top: 5px;
 }
 
 .btn-interacccion-publicaciones{
