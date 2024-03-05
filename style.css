@@ -103,10 +103,9 @@ body {
     border-color: black;
     border-radius: 10px;
     background-color: white;
+    overflow: hidden;
    
 }
-
-/* CSS para el div de perfil */
 
 .Crear-publicacion{
     padding: 15px;
@@ -114,11 +113,12 @@ body {
 
 .Perfil{
     grid-row: 1/4 ;
+   
 }
 
 .Mas{
     grid-row: 4/5 ;
-    padding: 15px;
+     
 }
 
 .Publicaciones{
@@ -133,7 +133,6 @@ body {
 
 .Publicidad{
     grid-row: 4/6;
-    overflow: hidden; 
     padding: 0px;
 }
 
@@ -142,20 +141,26 @@ body {
     grid-column: 3;
 }
 
+/* CSS para el div de perfil */
+
+.fondo img{
+    width: 100%;
+    height: 60px;
+}
 
 .descripcion-foto
 { 
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: -45px;
 }
 
 .btn-perfil img{
     border-radius: 50px;
-    border: 3px solid black;
-    width: 60px;
-    height: 60px;
+    border: 3px solid white;
+    width: 70px;
+    height: 70px;
 }
 
 .btn-perfil
@@ -429,9 +434,9 @@ body {
 /* CSS para el botón más */
 .Mas-eventos{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
 }
 
 .agregar-evento{
@@ -452,12 +457,149 @@ body {
     background-color: gainsboro;
 }
 
+.a-mas-evento{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #3498db; 
+    font-size: 12px;
+}
+
 .a-mas{
     text-decoration: none; 
     color: #3498db; 
     font-size: 12px;
 }
 
-.a-mas:hover{
+.a-mas-evento span:hover{
     text-decoration: underline;
+}
+
+.a-mas :hover{
+    text-decoration: underline;
+}
+
+.Mas-ver-mas{
+    border: none;
+    background: none;
+    width: 100%;
+    border-top: 1px solid gray;
+    margin: 0;
+    color: gray;
+    padding: 10px;
+}
+
+.Mas-ver-mas:hover{
+    background-color:  rgb(226, 226, 226);
+}
+
+/* CSS para el div de publicaciones */
+
+.interaccion-publicaciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 10px solid gray;
+    
+}
+
+.btn-interacccion-publicaciones{
+    background:none;
+    border: none;
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:5px;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.btn-interacccion-publicaciones:hover{
+    background-color:  rgb(226, 226, 226);
+}
+
+.perfil-publicacion{
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.link-perfil-publicacion img{
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.link-perfil-publicacion{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px
+}
+
+.link-perfil-publicacion span{
+    color:black;
+    font-size: 14px;  
+}
+
+.link-perfil-publicacion p{
+    color:gray;
+    font-size: 11px;
+}
+
+.perfil-publicacion a.link-perfil-publicacion i.material-icons {
+
+    font-size: 14px; 
+}
+
+.imagen-publicacion img{
+    width: 100%;
+    height: 100%;
+}
+.descripcion-publicacion{
+    padding: 0px 15px 0px 15px;
+    font-size: 13px;
+}
+
+.reacciones{
+    padding:0px 15px 0px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.reaccion-emoticon{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.reaccion-emoticon p{
+    text-align: left;
+    margin-left: -35px;
+    color:gray;
+    font-size: 12px;
+}
+.reaccion-emoticon p:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.reacciones a.reaccion-emoticon i.material-icons {
+    color:blue;
+    font-size: 18px;
+}
+.comentario-compartido{
+    color:gray;
+    font-size: 12px;
+    text-decoration: none;
+
+}
+.comentario-compartido span:hover{
+    text-decoration: underline;
+    color: blue;
+
 }
