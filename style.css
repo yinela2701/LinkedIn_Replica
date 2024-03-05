@@ -148,11 +148,15 @@ body {
 .Publicidad{
     grid-row: 11/18;
     padding: 0px;
+    position: sticky;
+    top: 70px;
 }
 
 .Footer{
     grid-row: 18/24;
     grid-column: 3;
+    position: sticky;
+    top: 362px;
 }
 
 /* CSS para el div de perfil */
