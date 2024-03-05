@@ -106,33 +106,26 @@ body {
     margin: 5.5% 10% 0% 10%;
 }
 
-.Grid > div
+.Grid > div:nth-child(-n+6) 
 {
-    border:10px;
-    border-color: black;
+    border:1px solid rgba(128, 128, 128, 0.26);
     border-radius: 10px;
     background-color: white;
     overflow: hidden;
-    box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.15);
-    
-   
+    box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.15); 
 }
 
 .Crear-publicacion{
     padding: 15px;
     grid-row: 1/ 4;
-    
-
 }
 
 .Perfil{
     grid-row: 1/10 ;
-   
 }
 
 .Mas{
     grid-row: 10/14 ;
-     
 }
 
 .Publicaciones{
@@ -283,7 +276,7 @@ body {
     align-items: center;
     gap: 10px;
     padding-left: 10px;
-    padding-top: 6px;
+    padding-top: 7px;
 }
 .marcapaginas i{
     color:gray;
@@ -447,6 +440,7 @@ body {
 .ver-mas{
     margin-right: 50px;
     margin-top: 12px;
+    border-radius:3px ;
 }
 
 .ver-mas:hover{
@@ -625,4 +619,28 @@ body {
     text-decoration: underline;
     color: blue;
 
+}
+
+/*Footer Css*/
+
+.Footer .material-icons {
+    font-size: 15px; 
+}
+
+.Descripcion-Footer p{
+    text-align: center;
+    font-size: 11px;
+    margin: 10px;
+}
+.Descripcion-Footer a{
+    margin: 5px;
+    text-decoration: none;
+    color: gray;
+}
+.Descripcion-Footer a:hover{
+    text-decoration: underline;
+    color:blue;
+}
+.Descripcion-Footer span{
+    color: black;
 }
